@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recruitment Task - Profil Software - 10.2019</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <h1>Frontend Intern - Recruitment task</h1>
+    <h2>TV Series searching app.</h2>
+</div>
+<div>
+    <form id="search-form">
+        <input class="inputText" id="search-input" type="text" value="Enter TV Series title">
+        <input id="submitButton" type="submit" value="SEARCH">
+    </form>
+    <div>
+    <div class="sorting">
+        <h4>Sort by: </h4>
+        <label><input class="sortOption" type="radio" name="sort" value="Title">Name</label>
+        <label><input class="sortOption" type="radio" name="sort" value="Released">Release date</label>
+        <label><input class="sortOption" type="radio" name="sort" value="imdbRating">Rating</label>
+    </div>
+    <div class="filter">
+        <h4>Filter by: </h4>
+        <div class="filterDiv">
+            <h5 class="filterTitle">Release Date</h5>
+            <label>FROM: </label><input class="inputDate filterInput" id="yearFrom" type="number" min="1900" max="2020" value="1900">
+            <label>TO: </label><input class="inputDate filterInput" id="yearTo" type="number" min="1900" max="2020" value="2020">
+        </div>
+        <div class="filterDiv">
+            <h5 class="filterTitle">Rating</h5>
+            <label>FROM: </label><input class="inputNum filterInput" id="ratingFrom" type="number" min="0" max="9.9" value="0.0">
+            <label>TO: </label><input class="inputNum filterInput" id="ratingTo" type="number" min="0" max="9.9" value="9.9">
+        </div>
+        <div class="filterButtons">
+            <input id="filterButton" type="submit" value="FILTER!">
+            <input id="resetFilter" type="submit" value="Reset filter!">
+        </div>
+    </div>
+</div>
+<div id="searchStatus">
+    <h2>Loading...</h2>
+    <div class="loader"></div>
+</div>
+<div id="resultCards" class="resultCards">
+</div>
+<h2 id="resultsStatus"></h2>
+
+<script src="app.js"></script>
+</body>
+</html>

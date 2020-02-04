@@ -1,0 +1,113 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* -------------------
+Header and inputs/buttons
+------------------- */
+.filterInput{
+    width: 25%;
+    display: inline-block;
+}
+
+.filterTitle{
+    padding: 0 2%;
+    margin: .5em 0;
+}
+
+.filterDiv{
+    display: inline-block;
+    width: 40%;
+}
+
+.filter, .sorting{
+    display: inline-block;
+    width: 40%;
+    height: 110px;
+    padding-top: 0px
+}
+
+.filter h4{
+    margin: auto 0px;
+}
+
+.filter div label {
+    font-size: 0.75em;
+}
+
+.filterButtons{
+    display: inline-block;
+    width: 10%;
+}
+
+/* Result cards */
+
+.resultCards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.resultCard{
+    width: 24.5%;
+    border: solid 1px black;
+    padding: 2px;
+    display: inline-block;
+    position: relative;
+}
+
+/* Card elements */
+
+.cardTitle{
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.cardText{
+    text-align: left;
+    font-size: 0.75em;
+}
+
+.cardCover{
+    width: 75px;
+    height: 75px;
+}
+
+#searchStatus {
+    color: rgb(129, 15, 15);
+}
+
+.ratingEl{
+    font-size: 0.75em;
+}
+
+.awardImage{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+#searchStatus{
+    display: none;
+    text-align: center;
+}
+
+.loader {
+    margin: auto;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
